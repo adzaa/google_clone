@@ -19,6 +19,17 @@ input {
     padding-left: 5px;
     width: 100%;
 }
+
+.search_bar {
+    display: flex; 
+    border: 1px solid #5f6368; 
+    border-radius: 40px; 
+    width: 100%;
+    max-width: 584px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
 .search_bar:hover {
     background-color: #303134;
     border: 1px solid #202124 !important;
@@ -39,9 +50,28 @@ button:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 footer div .links div {
     padding: 10px;
 }
+
+footer div .links2 div {
+    padding: 10px;
+}
+
 footer {
     color: #9aa0a6;
     font-size: 15px;
@@ -49,4 +79,29 @@ footer {
 .links div:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.links2 div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 785px) {
+    .footer_links {
+        justify-content: space-evenly;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .links {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media only screen and (max-width: 584px) {
+    .search_bar {
+        width: 80%;
+     }
 }
